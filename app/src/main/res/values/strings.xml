@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VNote</string>
+
+
+    <!-- GuideActivity -->
+    <string name="guide_into_mainAct">进入首页</string>
+</resources>

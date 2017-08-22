@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape>
+            <gradient android:centerColor="@color/commBackgroundPress" android:endColor="@color/commBackgroundPress" android:startColor="@color/commBackgroundPress" />
+
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <gradient android:centerColor="@android:color/white" android:endColor="@android:color/white" android:startColor="@android:color/white" />
+
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <gradient android:centerColor="@color/commBackgroundPress" android:endColor="@color/commBackgroundPress" android:startColor="@color/commBackgroundPress" />
+
+        </shape>
+    </item>
+
+</selector>
