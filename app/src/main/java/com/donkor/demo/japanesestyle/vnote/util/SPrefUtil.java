@@ -15,7 +15,7 @@ public class SPrefUtil {
     public static final String TAG = "PrefsUtil";
 
     private static SPrefUtil instance; // 当前实体类
-    public static final String SP_NAME = "vfuchong";
+    public static final String SP_NAME = "vNote";
     public static Context context;
 
     // =====================================定义变量=======================================

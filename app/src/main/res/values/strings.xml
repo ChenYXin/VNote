@@ -4,4 +4,18 @@
 
     <!-- GuideActivity -->
     <string name="guide_into_mainAct">进入首页</string>
+
+    <!-- MainActivity -->
+    <string name="mainAct_note">笔记</string>
+    <string name="mainAct_ground">云协作</string>
+    <string name="mainAct_mine">我的</string>
+
+    <!-- MineFragment -->
+    <string name="mineFragment_notLoggedIn">未登录</string>
+    <string name="mineFragment_starFile">加星文件</string>
+    <string name="mineFragment_myLabel">我的标签</string>
+    <string name="mineFragment_myFavorites">我的收藏</string>
+    <string name="mineFragment_shareFriends">分享朋友</string>
+    <string name="mineFragment_mySuggestions">意见反馈</string>
+    <string name="mineFragment_aboutVNote">关于vNote</string>
 </resources>

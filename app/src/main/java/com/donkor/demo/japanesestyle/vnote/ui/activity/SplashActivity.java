@@ -28,7 +28,6 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
         prefUtil = SPrefUtil.getInstance(this);
 
-
         if (prefUtil.isFirstLogin()) {
             mHandler.sendEmptyMessageDelayed(SWITCH_GUIDACTIVITY, 1000);
         } else {
@@ -47,7 +46,6 @@ public class SplashActivity extends Activity {
             Intent mIntent = new Intent();
             switch (msg.what) {
                 case SWITCH_MAINACTIVITY:
-                    LogUtil.e("asd","SWITCH_MAINACTIVITY");
                     mIntent.setClass(SplashActivity.this, MainActivity.class);
                     SplashActivity.this.startActivity(mIntent);
                     SplashActivity.this.finish();

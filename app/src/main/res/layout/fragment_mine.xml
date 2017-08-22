@@ -4,6 +4,38 @@
     android:background="@color/commBackground"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/commBackground">
+
+        <FrameLayout
+            android:id="@+id/flAvatar"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/mine_avator_bg">
+
+            <com.donkor.demo.japanesestyle.vnote.view.CircleImageView
+                android:id="@+id/civUserAvatar"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/img_default_avator" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvUserame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flAvatar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mineFragment_notLoggedIn"
+            android:textColor="@color/commFontShallowBlack"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
     <!-- =====主体栏目===== -->
 
     <LinearLayout
@@ -32,14 +64,7 @@
                     android:background="@android:color/white"
                     android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/background_mine_press"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="10dp">
+                    <RelativeLayout style="@style/layout_common">
 
                         <ImageView
                             android:id="@+id/ivListImg2"
@@ -49,14 +74,9 @@
 
                         <TextView
                             android:id="@+id/tvSettingMsg2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/ivListImg2"
-                            android:paddingLeft="10dp"
-                            android:text="加星文件"
-                            android:textColor="#222222"
-                            android:textSize="15sp" />
+                            style="@style/textView_common"
+                            android:paddingStart="10dp"
+                            android:text="@string/mineFragment_starFile" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -65,23 +85,12 @@
                             android:layout_alignParentRight="true"
                             android:paddingBottom="5dp"
                             android:paddingLeft="20dp"
-                            android:src="@mipmap/icon_right"/>
+                            android:src="@mipmap/icon_right" />
                     </RelativeLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginLeft="30dp"
-                        android:background="@color/line" />
+                    <View style="@style/view_line_common" />
 
-                    <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/background_mine_press"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="10dp">
+                    <RelativeLayout style="@style/layout_common">
 
                         <ImageView
                             android:id="@+id/ivListImg3"
@@ -91,14 +100,9 @@
 
                         <TextView
                             android:id="@+id/tvSettingMsg3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/ivListImg3"
-                            android:paddingLeft="10dp"
-                            android:text="我的标签"
-                            android:textColor="#222222"
-                            android:textSize="15sp" />
+                            style="@style/textView_common"
+                            android:paddingStart="10dp"
+                            android:text="@string/mineFragment_myLabel" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -106,25 +110,13 @@
                             android:layout_alignBottom="@+id/tvSettingMsg3"
                             android:layout_alignParentRight="true"
                             android:paddingBottom="5dp"
-                            android:paddingLeft="20dp"
-                            android:src="@mipmap/icon_right"/>
+                            android:paddingStart="20dp"
+                            android:src="@mipmap/icon_right" />
                     </RelativeLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginLeft="30dp"
-                        android:background="@color/line" />
+                    <View style="@style/view_line_common" />
 
-                    <RelativeLayout
-                        android:id="@+id/rlMistakes"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/background_mine_press"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="10dp">
+                    <RelativeLayout style="@style/layout_common">
 
                         <ImageView
                             android:id="@+id/ivListImg4"
@@ -134,14 +126,9 @@
 
                         <TextView
                             android:id="@+id/tvSettingMsg4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/ivListImg4"
-                            android:paddingLeft="10dp"
-                            android:text="我的收藏"
-                            android:textColor="#222222"
-                            android:textSize="15sp" />
+                            style="@style/textView_common"
+                            android:paddingStart="10dp"
+                            android:text="@string/mineFragment_myFavorites" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -149,25 +136,17 @@
                             android:layout_alignBottom="@+id/tvSettingMsg4"
                             android:layout_alignParentRight="true"
                             android:paddingBottom="5dp"
-                            android:paddingLeft="20dp"
-                            android:src="@mipmap/icon_right"/>
+                            android:paddingStart="20dp"
+                            android:src="@mipmap/icon_right" />
                     </RelativeLayout>
 
                 </LinearLayout>
 
 
-
                 <RelativeLayout
-                    android:id="@+id/reShare"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/layout_common"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/background_mine_press"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:paddingTop="10dp">
+                    android:layout_marginTop="10dp">
 
                     <ImageView
                         android:id="@+id/ivListImg7"
@@ -177,14 +156,9 @@
 
                     <TextView
                         android:id="@+id/tvSettingMsg7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/ivListImg7"
-                        android:paddingLeft="10dp"
-                        android:text="分享朋友"
-                        android:textColor="#222222"
-                        android:textSize="15sp" />
+                        style="@style/textView_common"
+                        android:paddingStart="10dp"
+                        android:text="@string/mineFragment_shareFriends" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -192,8 +166,8 @@
                         android:layout_alignBottom="@+id/tvSettingMsg7"
                         android:layout_alignParentRight="true"
                         android:paddingBottom="5dp"
-                        android:paddingLeft="20dp"
-                        android:src="@mipmap/icon_right"/>
+                        android:paddingStart="20dp"
+                        android:src="@mipmap/icon_right" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -202,15 +176,7 @@
                     android:background="@android:color/white"
                     android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:id="@+id/reOpinion"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/background_mine_press"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="10dp">
+                    <RelativeLayout style="@style/layout_common">
 
                         <ImageView
                             android:id="@+id/ivListImg8"
@@ -220,14 +186,9 @@
 
                         <TextView
                             android:id="@+id/tvSettingMsg8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/ivListImg8"
-                            android:paddingLeft="10dp"
-                            android:text="意见反馈"
-                            android:textColor="#222222"
-                            android:textSize="15sp" />
+                            style="@style/textView_common"
+                            android:paddingStart="10dp"
+                            android:text="@string/mineFragment_mySuggestions" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -235,25 +196,13 @@
                             android:layout_alignBottom="@+id/tvSettingMsg8"
                             android:layout_alignParentRight="true"
                             android:paddingBottom="5dp"
-                            android:paddingLeft="20dp"
-                            android:src="@mipmap/icon_right"/>
+                            android:paddingStart="20dp"
+                            android:src="@mipmap/icon_right" />
                     </RelativeLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginLeft="30dp"
-                        android:background="@color/line" />
+                    <View style="@style/view_line_common" />
 
-                    <RelativeLayout
-                        android:id="@+id/reAbout"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/background_mine_press"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="10dp">
+                    <RelativeLayout style="@style/layout_common">
 
                         <ImageView
                             android:id="@+id/ivListImg9"
@@ -263,14 +212,9 @@
 
                         <TextView
                             android:id="@+id/tvSettingMsg9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/ivListImg9"
-                            android:paddingLeft="10dp"
-                            android:text="关于vNote"
-                            android:textColor="#222222"
-                            android:textSize="15sp" />
+                            style="@style/textView_common"
+                            android:paddingStart="10dp"
+                            android:text="@string/mineFragment_aboutVNote" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -278,8 +222,8 @@
                             android:layout_alignBottom="@+id/tvSettingMsg9"
                             android:layout_alignParentRight="true"
                             android:paddingBottom="5dp"
-                            android:paddingLeft="20dp"
-                            android:src="@mipmap/icon_right"/>
+                            android:paddingStart="20dp"
+                            android:src="@mipmap/icon_right" />
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -291,7 +235,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/btn_mine_lineoff"
+                    android:background="@drawable/btn_lineoff"
                     android:clickable="true"
                     android:gravity="center"
                     android:padding="10dp"

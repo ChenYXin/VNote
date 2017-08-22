@@ -27,9 +27,6 @@ import java.util.ArrayList;
 public class GuideActivity extends Activity {
     private ViewPager viewPager;
 
-    private static final String SHAREDPREFERENCES_NAME = "my_pref";
-    private static final String KEY_GUIDE_ACTIVITY = "guide_activity";
-
     /**
      * 装分页显示的view的数组
      */
@@ -47,8 +44,6 @@ public class GuideActivity extends Activity {
     // 包裹小圆点的LinearLayout
     private ViewGroup viewPoints;
 
-    private SPrefUtil prefUtil;
-
     /**
      *
      */
@@ -63,9 +58,6 @@ public class GuideActivity extends Activity {
         pageViews.add(inflater.inflate(R.layout.viewpager_page2, null));
         pageViews.add(inflater.inflate(R.layout.viewpager_page3, null));
         pageViews.add(inflater.inflate(R.layout.viewpager_page4, null));
-
-        prefUtil = new SPrefUtil(GuideActivity.this);
-
 
         // 创建imageviews数组，大小是要显示的图片的数量
         imageViews = new ImageView[pageViews.size()];
@@ -89,9 +81,9 @@ public class GuideActivity extends Activity {
 
             // 默认选中的是第一张图片，此时第一个小圆点是选中状态，其他不是
             if (i == 0) {
-                imageViews[i].setBackgroundResource(R.mipmap.dot);
+                imageViews[i].setBackgroundResource(R.mipmap.dot_blue);
             } else {
-                imageViews[i].setBackgroundResource(R.mipmap.white_dot);
+                imageViews[i].setBackgroundResource(R.mipmap.dot_white);
             }
 
             // 将imageviews添加到小圆点视图组
@@ -150,7 +142,6 @@ public class GuideActivity extends Activity {
         public void mainAct() {
             Intent mIntent = new Intent();
             mIntent.setClass(GuideActivity.this, MainActivity.class);
-            prefUtil.setValue("guide", "ClassFragment");
             GuideActivity.this.startActivity(mIntent);
             GuideActivity.this.finish();
         }
@@ -215,10 +206,10 @@ public class GuideActivity extends Activity {
             // TODO Auto-generated method stub
             for (int i = 0; i < imageViews.length; i++) {
                 imageViews[position]
-                        .setBackgroundResource(R.mipmap.dot);
+                        .setBackgroundResource(R.mipmap.dot_blue);
                 // 不是当前选中的page，其小圆点设置为未选中的状态
                 if (position != i) {
-                    imageViews[i].setBackgroundResource(R.mipmap.white_dot);
+                    imageViews[i].setBackgroundResource(R.mipmap.dot_white);
                 }
             }
         }

@@ -5,38 +5,7 @@
     android:background="#ffffff"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
 
-        <FrameLayout
-            android:id="@+id/flAvatar"
-            android:layout_width="97dp"
-            android:layout_height="97dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:background="@mipmap/settings_avator_bg">
-
-            <com.donkor.demo.japanesestyle.vnote.view.CircleImageView
-                android:id="@+id/civUserAvatar"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_gravity="center"
-                android:src="@mipmap/img_default_avator" />
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/tvUserame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/flAvatar"
-            android:layout_centerHorizontal="true"
-            android:text="aaaaaaaaaaaaaaaa"
-            android:textColor="#000000"
-            android:textSize="15dp" />
-
-    </RelativeLayout>
     <!-- =====主体栏目===== -->
     <LinearLayout
         android:id="@+id/linContent"
@@ -65,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#ffffff"
+            android:background="@android:color/white"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingTop="5dp">
@@ -74,14 +43,14 @@
                 android:id="@+id/ivNote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/bottom_lesson_focus" />
+                android:src="@mipmap/icon_note" />
 
             <TextView
                 android:id="@+id/tvNote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="笔记"
-                android:textColor="@color/commBlue"
+                android:text="@string/mainAct_note"
+                android:textColor="@color/commFontBlack"
                 android:textSize="13sp" />
         </LinearLayout>
 
@@ -90,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#ffffff"
+            android:background="@android:color/white"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingTop="5dp">
@@ -99,14 +68,14 @@
                 android:id="@+id/ivGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/bottom_class" />
+                android:src="@mipmap/icon_ground" />
 
             <TextView
                 android:id="@+id/tvGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="云协作"
-                android:textColor="@color/commfalse"
+                android:text="@string/mainAct_ground"
+                android:textColor="@color/commFontBlack"
                 android:textSize="13sp" />
         </LinearLayout>
 
@@ -115,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#ffffff"
+            android:background="@android:color/white"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingTop="5dp">
@@ -124,14 +93,14 @@
                 android:id="@+id/ivMine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/bottom_mine" />
+                android:src="@mipmap/icon_mine_focus" />
 
             <TextView
                 android:id="@+id/tvMine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="我的"
-                android:textColor="@color/commfalse"
+                android:text="@string/mainAct_mine"
+                android:textColor="@color/commFontBlue"
                 android:textSize="13sp" />
         </LinearLayout>
     </LinearLayout>

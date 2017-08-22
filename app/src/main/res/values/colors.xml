@@ -4,9 +4,13 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="commBlue">#1997ff</color>
+    <color name="commButtonBlue">#1997ff</color>
     <color name="commBluePress">#1476d4</color>
-    <color name="commfalse">#666666</color>
+
+
+    <color name="commFontBlue">#1997ff</color>
+    <color name="commFontShallowBlack">#222222</color>
+    <color name="commFontBlack">#666666</color>
 
     <color name="commBackground">#f5f7fa</color>
 

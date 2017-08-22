@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VNote</string>
+
+
+    <!-- GuideActivity -->
+    <string name="guide_into_mainAct">Home Page</string>
+
+    <!-- MainActivity -->
+    <string name="mainAct_note">Note</string>
+    <string name="mainAct_ground">Ground</string>
+    <string name="mainAct_mine">Mine</string>
+
+    <!-- MineFragment -->
+    <string name="mineFragment_notLoggedIn">Not Logged In</string>
+    <string name="mineFragment_starFile">Star File</string>
+    <string name="mineFragment_myLabel">Tagged File</string>
+    <string name="mineFragment_myFavorites">Favorite File</string>
+    <string name="mineFragment_shareFriends">Share Friends</string>
+    <string name="mineFragment_mySuggestions">My Suggestion</string>
+    <string name="mineFragment_aboutVNote">About vNote</string>
+</resources>
